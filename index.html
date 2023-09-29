@@ -2,23 +2,63 @@
 <html lang="en-UK">
 
 <head>
+
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="constructions, building, builder, builder near me, top builders near me, 
+    house builder, constructions companies near me, constructions companies, constructions companies in the UK, 
+    house repair builder, house repair, builders for extension, extend my house, plasterers near me, 
+    painters near me, carpenters near me">
+    <meta name ="author" content="Sohail Shirzad">
+    <meta name ="viewport" content="width= device-width, initial-scale=1.0">
+    
     <link rel="stylesheet" href="index.css">
+    
     <title>Stroika constructions</title>
+</head>
+ <body>
     <div class="header">
-        <img = src="img/logo8.jpeg" alt="Stroika Constructions logo"
+        <img class="logo" = src="img/logo8.jpeg" alt="Stroika Constructions logo"
         width="150px" height="160px">
 
+        <div class="headerRight">
+            <a class="active" href="#Home">Home</a>
+            <a href="">Get Quote</a>
+            <a href="">Call Now</a>
+            
+        </div>
     </div>
-</head>
-
-<body>
     <div class="mainContent">
         <!--<img src="img/mainContentPic.png" alt="Stoika constructions building image" width="100%">!-->
-        <h1>Stoika Constructions</h1>
-        <h3>Quality. Safety. Reliablity. Every Time. </h3>
-        <a href = "#">GET QUOTE</a> 
+        <h1 style="color: aliceblue; font-size:60px; padding-top: 15%; padding-left: 5%;">Stroika Constructions</h1>
+        <h2 style="color: aliceblue; padding-left: 5%;">Quality. Safety. Reliablity. Every Time. </h3>
+        <br><br>
+        <a style="color: aliceblue; padding-left: 5%;" href = "mailto:stroikaconstruction.com">GET QUOTE</a> 
     </div>
     <hr>
+    <div class="tab">
+        <button class="tabLinks" onclick="openService(event, 'Service')" id="defaultOpen">Our Services</button>
+        <button class="tabLinks" onclick="openService(event, 'AboutUs')">About Us</button>
+        <button class="tabLinks" onclick="openService(event, 'GetQuote')">Get Quote</button>
+    </div>
+
+
+    <div id="Service" class="tabDescription">
+        <h5>Our Services</h5>
+        <p>dflkjdfjkdlkf</p>
+
+    </div>
+    <div id="AboutUs" class="tabDescription">
+        <h5>About us</h5>
+        <p>dflkjdfjkdlkf</p>
+
+    </div>
+    <div id="GetQuote" class="tabDescription">
+        <h5>Get Quote</h5>
+        <p>dflkjdfjkdlkf</p>
+
+    </div>
+
     <div class="testimonials"></div>
     <h1>Testimonials</h1>
 
@@ -58,8 +98,7 @@ Sun:	Closed
 
         
     </div>
-  
-
+<script src="index.js"></script>
 </body>
 
 </html>
