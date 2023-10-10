@@ -13,6 +13,8 @@
     <meta name ="viewport" content="width= device-width, initial-scale=1.0">
     
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="slideshowGallery.css">
+
     
     <title>Stroika constructions</title>
 </head>
@@ -23,69 +25,193 @@
 
         <div class="headerRight">
             <a class="active" href="#Home">Home</a>
-            <a href="">Get Quote</a>
+            <a href="contactUs.html">Get Quote</a>
             <a href="">Call Now</a>
             
         </div>
     </div>
     <div class="mainContent">
         <!--<img src="img/mainContentPic.png" alt="Stoika constructions building image" width="100%">!-->
-        <h1 style="color: aliceblue; font-size:60px; padding-top: 15%; padding-left: 5%;">Stroika Constructions</h1>
-        <h2 style="color: aliceblue; padding-left: 5%;">Quality. Safety. Reliablity. Every Time. </h3>
+        <h1 id="mainContentH1">Stroika Constructions</h1>
+        <h2 id="mainContentH2">Quality. Safety. Reliablity. Every Time. </h3>
         <br><br>
-        <a style="color: aliceblue; padding-left: 5%;" href = "mailto:stroikaconstruction.com">GET QUOTE</a> 
+        <a style="color: aliceblue; padding-left: 5%;" href = "contactUs.html">GET QUOTE</a> 
     </div>
     <hr>
     <div class="tab">
-        <button class="tabLinks" onclick="openService(event, 'Service')" id="defaultOpen">Our Services</button>
+        <button class="tabLinks" onclick="openService(event, 'Service')">Our Services</button>
         <button class="tabLinks" onclick="openService(event, 'AboutUs')">About Us</button>
-        <button class="tabLinks" onclick="openService(event, 'GetQuote')">Get Quote</button>
+        <button class="tabLinks" onclick="openService(event, 'GetQuote')" id="defaultOpen">Get Quote</button>
+    </div>
+
+    <div id="GetQuote" class="tabDescription">
+        <form autocomplete="on" action="mailto:stroikaconstructions.co.uk" method="post" enctype="text/plain">
+            <label>Full Name:</label><br>
+            <input type="text" id="fname" name="fname" placeholder="ex: John Smith: "><br>
+            Email:<br><input type="email" id="email" name="email" placeholder="ex: john@hotmail.com"><br>
+            Phone:<br><input type="tel" id="tel" name="tel" placeholder="ex: 07972088830"><br>
+            Description:<br>
+            <textarea id="description" name="description" placeholder="ex: I want to refurb my house..."></textarea><br><br>
+            <input type="submit"value="send">
+        </form>
+
     </div>
 
 
     <div id="Service" class="tabDescription">
-        <h5>Our Services</h5>
-        <p>dflkjdfjkdlkf</p>
+        <div class="serviceColumn">
+        <p>&#9745; Concreting</p>
+        <p>&#9745; Concrete Garages</p>
+        <p>&#9745; Garage Conversions</p>
+        <p>&#9745; Extension Conversions</p>
+        <p>&#9745; Agricultural Building</p>
+        
+        
+    </div>
+    <div class="serviceColumn">
 
+        <p>&#9745; Basement Cellar Conversions</p>
+        <p>&#9745; Car Ports</p>
+        <p>&#9745; Core Drilling</p>
+        <p>&#9745; Emergency Builder Service</p>
+        <p>&#9745; Foundations</p>
+
+    </div>
+
+    <div class="serviceColumn">
+        <p>&#9745; New Builds</p>
+        <p>&#9745; Partition Walls</p>
+        <p>&#9745; Repair and Listed Building Specialist</p>
+        <p>&#9745; Refurbishment</p>
+        <p>&#9745; Garden Studios</p>
+        <p>&#9745; Repair and Listed Building Specialist</p>
+
+    </div>
     </div>
     <div id="AboutUs" class="tabDescription">
         <h5>About us</h5>
-        <p>dflkjdfjkdlkf</p>
-
-    </div>
-    <div id="GetQuote" class="tabDescription">
-        <h5>Get Quote</h5>
-        <p>dflkjdfjkdlkf</p>
+        <p>Some description about Stroika Ltd</p>
 
     </div>
 
-    <div class="testimonials"></div>
-    <h1>Testimonials</h1>
+    <div class="titleContents">
+    <h3>Testimonials</h3>
+    </div>
+    <div class="testimonials">
+        <h3>Roof insulation</h3>
+        <p>We are really happy with the work provided. 
+        This project involved complete renovations for our family house, including rearranging dining room/kitchen layout, new electrics, bathrooms, complete decorating, a new driveway, and decking for our garden. 
+        Abas provided good advice, executed our vision, and was very pleasant to work with. We highly recommend Stroika Constructions!</p>
+        <h4>Location: HP3</h4>
 
-
-    <div class="gallery">
-        <h1>Gallery</h1>
     </div>
 
-    <div class="contactUs">
-        <h1>Contact Us</h1>
-        <iframe></iframe>
+    <div class="testimonials">
+        <h3>Loft conversion and interior renovation</h3>
+        <p>An outstanding team! The work was of excellent quality and the attention to detail was superb, the site was always tidy and clean, and the site visits and communication were excellent. In all aspects of our project, Abas and his team have always gone above and beyond to ensure we are satisfied. 
+        I highly recommend them to anyone who wants to benefit from high-quality work at a reasonable price.</p>
+        <h4>Location: UB3</h4>
+
+    </div>
+    <div class="testimonials">
+        <h3>Back yard pavement</h3>
+        <p>I am completely satisfied with the job and strongly recommend Stroika Constructions. End result exceeded expectations with excellent output and the job was completed in good time as planned despite heavy rainfall. 
+        The price was reasonable given the high quality and very good attitude of the team leader and the working staff, as well as providing excellent communication with the customer to understand what is expected.</p>
+        <h4>Location: HA4</h4>
+    </div>
+</div>
+
+    <div class="titleContents">
+        <h3>Gallery</h3>
+    </div>
+
+    <div class="container">
+        <div class="slideShow">
+            <div class="numberText"> 1 / 6 </div>
+            <img src="img/slide1.png" style="width: 100%;"
+        </div>
+    </div>
+
+    <div class="slideShow">
+        <div class="numberText"> 2 / 6</div>
+        <img src="img/slide2.jpg" style="width: 100%;">
+    </div>
+
+    <div class="slideShow">
+        <div class="numberText"> 3 / 6</div>
+        <img src="img/slide3.png" style="width: 100%;">
+    </div>
+    
+    <div class="slideShow">
+        <div class="numberText"> 4 / 6</div>
+        <img src="img/slide4.png" style="width: 100%;">
+    </div>
+
+    <div class="slideShow">
+        <div class="numberText"> 5 / 6</div>
+        <img src="img/slide5.png" width="100%;">
+    </div>
+
+    <div class="slideShow">
+        <div class="numberText"> 6 / 6</div>
+        <img src="img/slide6.png" width="100%;">
+    </div>
+
+    <a class="previuos"  onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+
+    <div class="captionContainer">
+        <p id="caption"></p>
+    </div>
+
+    <div class="row">
+        <div class="column">
+            <img class="demo cursor" src="img/slide1.png" style="width: 100%;"
+            onclick="currentSlides(1)" alt "refurbishment plastering">
+        </div>
 
         <div class="column">
+            <img class="demo cursor" src="img/slide2.jpg" style="width: 100%;"
+            onclick="currentSlides(2)" alt="refurbishment living room before">
+        </div>
+
+        <div class="column">
+            <img class="demo cursor" src="img/slide3.png" style="width: 100%;"
+            onclick="currentSlides(3)" alt="refurbishment living room after">
+        </div>
+
+        <div class="column">
+            <img class="demo cursor" src="img/slide4.png" style="width: 100%;"
+            onclick="currentSlides(4)" alt="">
+        </div>
+
+        <div class="column">
+            <img class="demo cursor" src="img/slide5.png" style="width: 100%;"
+            onclick="currentSlides(5)" alt="">
+        </div>
+
+        <div class="column">
+            <img class="demo cursor" src="img/slide6.png" style="width: 100%;"
+            onclick="currentSlides(6)" alt="">
+        </div>
+    </div>
+</div>
+
+<script src="slideShow.js"></script>
+        <hr>
+        <div class="footerColumn">
             <h2>Contact</h2>
-            <a href="#">Call now</a>
-            <h5>079999999999</h5>
-            <h5>Email:<a href="mailto:stroikaconstructions.com">stroikaconstructions.com</a></h5>
+            <h4> Tel: <a style="color: black;" href="tel:07360093903">07360093903</a></h4>
+            <h4>Email:<a style="color: black;;" href="mailto:stroikaconstructions.com">stroikaconstructions.com</a></h4>
         </div>
-        <div class="column">
+        <div class="footerColumn">
             <h2>Address</h2>
-            <a href="#">Get Direction</a>
-            <h5>Watford way <br> Watford <br> WD22 9AX <br>UK
-            </h5>
+            <h4>Watford way <br> Watford <br> WD22 9AX <br>UK
+            </h4>
         </div>
-        <div class="column">
+        <div class="footerColumn">
             <h2>Business hours</h2>
-<pre>
+<pre class="openingTimes">
 Mon:	8:00 AM – 5:00 PM
 Tue:	8:00 AM – 5:00 PM
 Wed:	8:00 AM – 5:00 PM
@@ -95,9 +221,16 @@ Sat:	8:30 AM – 4:00 PM
 Sun:	Closed
 </pre>
         </div>
+</div>
+<div class="copyRight">
+    <h4>&copy; 2023 Stroika Constructions</h4>
+</div>
+<div class="developer">
+    <h4>Designed & Developed by:
+<a style="color: #fcc93a;" href="https://www.linkedin.com/in/sohailshirzad/" target="_blank">Sohail Shirzad</a>
+</h4>
+</div>
 
-        
-    </div>
 <script src="index.js"></script>
 </body>
 
