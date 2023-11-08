@@ -1,0 +1,162 @@
+/* This is for header */
+
+.headerLevelOne{
+display:flex;
+justify-content: space-between;
+margin: auto;
+width: 100%;
+overflow:hidden;
+background-color:#5340FE;
+color: white;
+border-bottom: #192851 0.5px solid;
+
+}
+.headerLevelOne a {
+float: left;
+color: white;
+text-align: center;
+padding: 12px;
+text-decoration: none;
+font-size: 16px;
+line-height: 20px;
+border-radius: 4px;
+margin-top: 50px;
+
+}
+.headerLevelOne a.logo {
+visibility: visible;
+margin-top: auto;
+
+}
+.headerLevelOneRightSide{float: right;}
+
+
+#HeaderLevelOneQuoteButton
+{
+font-size: 16px;
+border-radius: 10px;
+width: fit-content;
+font-weight: bold;
+text-transform: uppercase;
+background-color: #192851;
+letter-spacing: 3px;
+color: white;
+padding: 0.8125em 1.875em;
+text-align: center;
+
+}
+#HeaderLevelOneQuoteButton:hover
+{
+    background-color: #5340FE;
+    color: white;
+    border-bottom: 1px solid #19d3c5;
+}
+
+.headerLevelTwo {
+overflow:hidden;
+background-color: #192851;
+border-bottom: 0.5px solid #192851;
+}
+
+.headerLevelTwo a{
+float: right;
+display: block;
+color: white;
+text-align: center;
+padding: 12px;
+text-decoration: none;
+font-size: 16px;
+line-height: 20px;
+border-radius: 4px;
+margin-top: 15px;
+margin-bottom: 25px;
+}
+
+.headerLevelTwo a:hover {
+border-bottom: 3px solid #19d3c5;
+color: #19d3c5;
+}
+
+
+
+.headerLevelTwo .headerLevelTwoLeft{float: left;}
+
+.headerLevelTwo a.active{border-bottom: 3px solid #19d3c5;}
+
+.headerLevelTwo .icon{display: none;}
+
+.headerLevelTwo .closebtn {display: none;}
+
+.headerLevelTwoLogo{visibility: hidden;}
+
+@media screen and (max-width: 950px)
+{
+.headerLevelTwo a:not(:first-child) {
+
+display: none;}
+.headerLevelTwo a.icon{
+float: right;
+display: block;
+margin-right: -95px;
+font-size: 40px;
+padding: 20px;
+margin-top: 1px;
+} 
+
+.headerLevelTwo.icon{visibility: visible;}
+
+.headerLevelTwo .icon {
+    display: none;
+}
+
+.headerLevelTwo{background-color: #5340FE;}
+
+
+
+
+.headerLevelTwo.responsive {
+position: relative;
+border-top: 1px solid #192851;
+height: 100vh;
+}
+
+
+.headerLevelTwo.responsive .icon{
+    display: none;
+}
+
+.headerLevelTwo.responsive .headerLevelTwoLeft{float: none;}
+
+.headerLevelTwo.responsive .closebtn {
+    position: absolute;
+    right: 7px;
+    font-size: 50px;
+    top: 20px;
+    background-color: transparent;
+}
+
+.headerLevelTwo.responsive a{
+    float: none;
+    display: block;
+    text-align: left;
+    background-color: #4834fe;
+    margin: 0px;
+    padding: 24px;
+    font-size: 23px;
+    letter-spacing: 2px;
+    border-bottom: 0.3px solid #19d3c5;
+    font-weight: bolder;
+
+}
+.headerLevelTwo.responsive a:hover{
+    border-bottom: 3px solid #19d3c5;
+    color: #19d3c5;
+    
+    }
+
+
+.headerLevelTwoLogo{visibility: visible;}
+.headerLevelOne a.logo {display: none;}
+.headerLevelOne{display: none;}
+
+}

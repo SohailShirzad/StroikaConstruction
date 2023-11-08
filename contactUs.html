@@ -13,25 +13,43 @@
     <meta name ="viewport" content="width= device-width, initial-scale=1.0">
     
     <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="ContactUs.css">
-
+    <link rel="stylesheet" href="slideshowGallery.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="contactUs.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
     <title>Stroika constructions</title>
 </head>
-    <!--Header-->
-<body>
-    <div class="header">
-        <img class="logo" = src="img/logo8.jpeg" alt="Stroika Constructions logo"
-        width="150px" height="160px">
-
-        <div class="headerRight">
-            <a href="index.html">Home</a>
-            <a class="active">Get Quote</a>
-            <a href="">Call Now</a>
-            
-        </div>
+ <body>
+    <div class="headerLevelOne">
+        <a class="logo" href="index.html"><img src="img/finalLogo1.png" alt="Stroika Construction logo"></a>
+        <div class="headerLevelOneRightSide">
+        <a id="HeaderLevelOneQuoteButton" href="contactUs.html">Get Quote</a>
+    </div>
     </div>
 
+    <div class="headerLevelTwo" id="header">
+        <img class="headerLevelTwoLogo" src="img/finalLogo1.png" alt="Stroika Construction logo">
+        <a href="">Call Now</a>
+        <a class="active" href="#">Contact Us</a>
+        <a href="index.html">Home</a>
+        <a class="headerLevelTwoLeft" href="projects.html">Projects</a>
+        <a class="headerLevelTwoLeft" href="#">Testimonials</a>
+        <a href="javascript:void(0);" class="icon" onclick="headerFunction()">
+        <i class="fa fa-bars"></i></a>
+
+        <a href="javascript:void(0)" class="closebtn" onclick="headerFunction()">&times;</a>
+
+    </div>
+
+    <!--This is for side nav will be used for phone, email, and get quote-->
+
+    <div class="sideNav" id="sideNav">
+        <a href="#" id="call"><i class="fa fa-phone"></i>Call</a>
+        <a href="mailto:stroika.co.uk" id="sideNavEmail"><i class="fa fa-envelope"></i>Email:</a>
+        <a href="contactUs.html" id="quote"><i class="fa fa-inbox"></i>Quote</a>
+
+    </div>
 
     <div class="titleContents">
         <h3>Get in touch</h3>
@@ -42,30 +60,19 @@
     <form autocomplete="on" action="mailto:stroikaconstructions.co.uk" method="post" enctype="multipart/form-data">
         <div class="row">
           <div class="colTitle">
-            <label for="fullName">Full Name:</label>
-          </div>
-          <div class="colInput">
-            <input required type="text" name="fullName" id="fullName" placeholder="Your Full Name..">
-          </div>
-        </div>
-        <div class="row">
-          <div class="colTitle">
             <label for="Email">Email:</label>
           </div>
           <div class="colInput">
             <input required type="email" name="Email" id="Email" placeholder="Your email address..">
           </div>
         </div>
-        
+
         <div class="row">
           <div class="colTitle">
-            <label for="subject">Subject</label>
+            <label for="phone">Phone:</label>
           </div>
           <div class="colInput">
-            <select id="subject" name="Subject">
-              <option value="Quotation">Quotation</option>
-              <option value="General">General</option>
-            </select>
+            <input required type="tel" name="Phone" id="Phone" placeholder="Your phone..">
           </div>
         </div>
         <div class="row">
@@ -84,39 +91,40 @@
 </div>
 
     <hr>
-    <div class="footerColumn">
-        <h2>Contact</h2>
-        <h4> Tel: <a style="color: black;" href="tel:07360093903">07360093903</a></h4>
-        <h4>Email:<a style="color: black;;" href="mailto:stroikaconstructions.com">stroikaconstructions.com</a></h4>
-    </div>
-    <div class="footerColumn">
-        <h2>Address</h2>
-        <h4>Watford way <br> Watford <br> WD22 9AX <br>UK
-        </h4>
-    </div>
-    <div class="footerColumn">
-        <h2>Business hours</h2>
-<pre class="openingTimes">
-Mon:	8:00 AM – 5:00 PM
-Tue:	8:00 AM – 5:00 PM
-Wed:	8:00 AM – 5:00 PM
-Thu:	8:00 AM – 5:00 PM
-Fri:	8:00 AM – 5:00 PM
-Sat:	8:30 AM – 4:00 PM
-Sun:	Closed
-</pre>
-    </div>
-</div>
-<div class="copyRight">
-<h4>&copy; 2023 Stroika Constructions</h4>
-</div>
-<div class="developer">
-<h4>Designed & Developed by:
-<a style="color: #fcc93a;" href="https://www.linkedin.com/in/sohailshirzad/" target="_blank">Sohail Shirzad</a>
-</h4>
-</div>
+    <div class="footer">
+      <div class="footerColumn">
+          <h2>Contact</h2>
+          <h4> Tel: <a style="color: white;" href="tel:07360093903">07360093903</a></h4>
+          <h4>Email:<a style="color: white;" href="mailto:stroika.co.uk">stroika.co.uk</a></h4>
+      </div>
+      <div class="footerColumn">
+          <h2>Address</h2>
+          <h4>Watford way <br> Watford <br> WD22 9AX <br>UK
+          </h4>
+      </div>
+      <div class="footerColumn">
+          <h2>Quick links</h2>
+          <h4><a style="color: white;" href="#">Home</a></h4>
+          <h4><a style="color: white;" href="contactUs.html">Get Quote</a></h4>
+          </h4>
+      </div>
+  </div>
+
+
+  <div class="developer">
+      <h4>Designed & Developed by:
+      <a style="color: #5340FE;" href="https://www.linkedin.com/in/sohailshirzad/" 
+      target="_blank">Sohail <font color="#192851" >Shirzad</font></a>
+      </h4>
+  </div>
+
+  <div class="copyRight">
+      <h4>&copy; 2023 Stroika Constructions</h4>
+  </div>
+
+<script src="index.js"></script>
+<script src="header.js"></script>
     
 
-
-</html>
 </body>
+</html>

@@ -18,8 +18,8 @@ input[type=text], select, textarea{
   }
   
   input[type=submit] {
-    background-color:#fcc93a;
-    color: black;
+    background-color:#19d3c5;
+    color: #192851;
     padding: 12px 20px;
     border: none;
     border-radius: 4px;
@@ -28,15 +28,16 @@ input[type=text], select, textarea{
   }
   
   input[type=submit]:hover {
-    background-color: black;
-    color: #fcc93a;
+    background-color: #192851;
+    color: #19d3c5;
   }
   
   .contactcontainer {
     border-radius: 5px;
-    background-color:black;
+    background-color:#f6efea;
     padding: 20px;
-    color: #fcc93a;
+    color:#192851;
+    margin: 1% 7% 1% 7%;
   }
   
   .colTitle {

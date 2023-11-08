@@ -1,0 +1,192 @@
+#imgForModal{
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#imgForModal:hover{opacity: 0.6;}
+
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 9);
+
+}
+/* Modal Content (image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+  }
+  
+  /* Caption of Modal Image */
+  #caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+  }
+  
+.modalContent {
+    margin: auto;
+    display: block;
+    width: 90%;
+    max-width: 700px;
+    height: 70%;
+  }
+  
+  /* Caption of Modal Image */
+  #caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+  }
+  
+  /* Add Animation */
+  .modalContent, #caption {  
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+  }
+  
+  @keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+  }
+
+  /* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .previuos,.next{
+
+    cursor: pointer;
+    position: absolute;
+    padding: 16px;
+    top: 28%;
+    width: auto;
+    margin-top: -50px;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.next{
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.previuos{
+  left: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.previuos:hover,.next:hover
+{
+    background-color: rgba(0,0,0,0.8);
+    color: white;
+
+}
+.projectDetailsContent
+{
+    width: 100%;
+    height: 400px;
+}
+.projectsReadMore
+{
+    font-size: 16px;
+    border-radius: 10px;
+    width: fit-content;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-color: #5340FE;
+    background-color: #5340FE;
+    color: #fff;
+    padding: 0.8125em 1.875em;
+    text-align: center;
+    cursor: pointer;
+
+}
+
+
+  /* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modalContent {
+      width: 100%;
+      margin: 25% 0 0 0;
+      height: 300px;
+    }
+    .projectsReadMore
+    {
+      text-align: center;
+    }
+    .projectDetailsContent
+    {
+      width: 90%;
+    }
+    .previuos,.next{
+
+      cursor: pointer;
+      position: absolute;
+      padding: 16px;
+      top: 60%;
+      width: auto;
+      color: black;
+      font-weight: bold;
+      font-size: 20px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+      -webkit-user-select: none;
+  }
+  
+  .previuos{
+    left: 0;
+    border-radius: 3px 0 0 3px;
+}
+  }
+
+

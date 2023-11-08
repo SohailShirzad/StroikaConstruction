@@ -1,60 +1,136 @@
-/* This is for header */
-.header {
-    overflow:hidden;
-    background-color: #fcc93a;
-    color: black;
-  }
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+} 
 
-  .header a{
-    float: left;
-    color: black;
+  /* This is for side nav */
+  #sideNav a
+  {
+    position: fixed;
+    transition: 0.5s;
     text-align: center;
-    padding: 12px;
+    right: -88px;
+    /* float: right; */
+    padding: 11px 8px 0px 16px;
+    width: 100px;
+    font-size: 21px;
     text-decoration: none;
-    font-size: 16px;
-    line-height: 20px;
-    border-radius: 4px;
-    margin-top: 50px;
+    color: white;
+    border-radius: 0 5px 5px 0;
+    z-index: 3;
+    background-color: #19d3c5;
   }
 
-  .header a:hover {
-    background-color: black;
-    color:#fcc93a;
+  #sideNav a:hover
+  {
+    right: 0px;
+    transition:0ms;
+    padding: 0px 0px 0px 0px;
+    height: 50px;
+    width: 201px;
+    border-radius: 0 5px 5px 0;
   }
 
-  .header a.active{
-    background-color: black;
-    color:#fcc93a;
+  
+  #sideNav i, #header i
+  {
+    letter-spacing: 27px;
+    text-align: center;
+    margin-top: 10px;
+    padding-right: 73px;
+    visibility:visible;
   }
 
-  .headerRight{
-    float: right;
+
+  #call
+  {
+    top:280px;
   }
 
- 
+  #sideNavEmail
+  {
+    top: 360px;
+  }
+
+  #quote
+  {
+    top: 440px;
+  }
+
+
+
 
 /* This is for mainContent*/
 .mainContent{
     height: 550px;
-    background-image: url(img/mainContentPic.png);
+    width: 100%;
+    background: linear-gradient(to bottom, #192851 46%, #5340fe 86%);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100% 100%;
+    
    
 }
 
-#mainContentH1{
+.mainContentH1{
   color: aliceblue; 
-  font-size:60px; 
+  font-size:17px; 
   padding-top: 3%; 
   padding-left: 5%;
   margin-top: 0px;
+  width: 39%;
+  float: left;
 }
 
-#mainContentH2{
-  color: aliceblue; 
-  padding-top: 6%; 
-  padding-left: 5%;
+.mainContentH2{
+  color: aliceblue;  
+  font-size: 14px;
+}
+
+
+.mainContentPic
+{
+  float: left;
+  width: 53%;
+  height: 500px;
+ 
+  
+}
+.mainImageForMaintContentPicDiv{
+  opacity: 1;
+  width:100%;
+  height:100%
+}
+
+.MainContentTwoServicesAndAboutUs
+{
+  width: 100%;
+
+}
+
+/* This is for quote buttons */
+
+.getQuoteButton
+{
+  font-size: 16px;
+  border-radius: 10px;
+  width: fit-content;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-color: #19d3c5;
+  background-color: #19d3c5;
+  color: #192851;
+  padding: 0.8125em 1.875em;
+  text-align: center;
+
+
+}
+.getQuoteButton:hover
+{
+  background-color: #5340FE;
+  color: white;
+  cursor: pointer;
+  
 }
 
 
@@ -63,9 +139,9 @@
 
 .tab{
     float: left;
-    border: 1px solid #fcc93a;
-    color: #fcc93a;
-    background-color: black;
+    border: 1px solid #f6efea;
+    color: #5340FE;
+    background-color:#5340FE;
     width: 30%;
     height: 300px;
 
@@ -73,8 +149,8 @@
 
 .tab button{
     display: block;
-    background-color: black;
-    color:#fcc93a;
+    background-color:#5340FE;
+    color:white;
     padding: 22px 16px;
     width: 100%;
     border: none;
@@ -87,31 +163,55 @@
 
 }
 
+.submitButton{
+  font-size: 16px;
+  border-radius: 10px;
+  width: fit-content;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-color: #19d3c5;
+  background-color: #19d3c5;
+  color: #192851;
+  padding: 0.8125em 1.875em;
+  text-align: center;
+}
+.submitButton:hover{
+  background-color: #5340FE; 
+  color: white; 
+  cursor: pointer; 
+  border: 1px solid #5340FE;}
+
 .tab button:hover{
 
-    color:black;
-    background-color:#fcc93a;
+    color:white;
+    background-color:#192851;
 
 }
 
 .tab button.active{
-    background-color: #fcc93a;
-    color:black;
+    background-color: #192851;
+    color:white;
 }
 
 .tabDescription{
     float: left;
     padding: 0px 12px;
-    border: 1px solid #fcc93a;
+    border: 1px solid #f6efea;
     width: 67%;
     border-left: none;
     height: 300px;
-    background-color: #fcc93a;
-    color:black;
+    background-color: #f6efea;
+    color:#192851;
     text-decoration: none;
     font-size: 18px;
-
 }
+
+
+textarea{
+  width: 70%;
+  height: 90px;
+}
+
 
 .titleContents
 {
@@ -126,119 +226,226 @@
   color: black;
   animation-name: example;
   animation-duration: 4s;
+  cursor: pointer;
   
 }
 @keyframes example {
   from {background-color: white;}
-  to {background-color: #fcc93a;}
+  to {background-color: #19d3c5;}
+}
+
+.footer
+{
+  width: 100%;
 }
 
 .footerColumn
 {
   float: left;
-  width: 33.33%;
-  background-color: #fcc93a;
-  color:black;
+  width: 100%;
+  background-color: #192851;
+  color:white;
   height: 200px;
-}
-
-.serviceColumn
-{
-  float: left;
   width: 33.33%;
 }
 
-textarea{
-  width: 70%;
-  height: 90px;
+.footerColumn a
+{
+  text-decoration: none;
+
+}
+
+.footerColumn a:hover{
+  border-bottom: 1px solid #19d3c5;
+  color: #19d3c5;
 }
 .copyRight
 {
   text-align: center;
   text-decoration: none;
-  background-color: black;
-  color: #fcc93a;
+  background-color: #f6efea;
+  color: #192851;
+  margin-top: -22px;
   
-}
-
-.testimonials{
-  float: left;
-  background-color: #fcc93a;
-  color: black;
-  width: 33.33%;
-  text-decoration: none;
-
-
 }
 .developer
 {
   width: 100%;
-  background-color: black;
-  color:aliceblue;
-  margin-top: -22px;
+  background-color: #f6efea;
+  color:#192851;
   text-align: center;
 }
-.openingTimes{
-  font-size: 16px;
 
-}
 
-@media screen and (max-width: 1000px)
+/* This is for responsive design */
+
+@media screen and (max-width: 950px)
 {
-  .header a {
-      float: none;
-      display: block;
-      text-align: left;
 
-  }
-
-  .headerRight{
-      display: flex;
-      float: right;
-      padding: 12px;
-  }
-  #mainContentH1{
-    font-size: 20px;
-  }
-  #mainContentH2{
-    display: inline-block;
-    width: 100px;
-    font-size: 18px;
-    
-  }
   .tab{
     width: 25%;
     height: 300px;
   }
   .tabDescription{
-    width: 69%;
+    width: 69.3%;
     text-decoration: none;
     font-size: 14px;
   }
-  .testimonials {
-    width: 100%;
-    text-align: justify;
-  }
 
-
-  .footerColumn {
-    float: left;
-    width: 33.33%;
-    background-color: #fcc93a;
-    color: black;
-    height: 180px;
-    font-size: 11px;
-    font-weight: bold;
 }
 
-  .developer{
+@media screen and (max-width: 850px)
+{
+
+  .mainContentPic{
+    
+    width: 39%;
+    margin-top: 14%;
+    height: 50%;
+    margin-left: 100px;
+
+
+  }
+
+}
+
+@media screen and (max-width: 600px)
+{
+  .mainContent{
+    height: 500px;
+
+  }
+
+  .mainContentH1{
+  font-size:23px;
+  position: absolute;
+  z-index: 2;
+
+}
+ul.mainContentH2{
+  position: absolute;
+  z-index: 1;
+  font-weight: bolder;
+  color: #192851;
+  background-color: transparent;
+  left: -12px;
+}
+
+.getQuoteButton{
+  position: relative;
+  z-index: 2;
+  top: 160px;
+  left: -21px;
+
+}
+
+  .mainContentPic{
+    position: absolute;
+    height: 31%;
+    width: 92%;
+    margin-top: 164px;
+    margin-left: 2px;
+    z-index: 0;
+  }
+
+  .tabDescription{
+    width: 64.3%;
+    text-decoration: none;
+    font-size: 14px;
+  }
+
+}
+
+@media screen and (max-width: 510px)
+{
+  .tabDescription{
+    width: 60.3%;
+  }
+  .getQuoteButton{
+    font-size: 14px;
+  }
+
+  .footerColumn{
+
+  
     width: 100%;
     text-align: center;
-  }
-  .openingTimes{
-
-    font-size: 11px;
-    font-weight: bold;
+    letter-spacing: 1.5px;
+    font-style: italic;
+    text-transform: uppercase;
+    font-size: 12px;
+    height: 120px;
   }
 }
 
+@media screen and (max-width: 365px)
+{
+
+  .mainContent{
+    height: 450px;
+  }
+
+  .mainContentH1{
+    font-size: 18px;
+  }
+
+  ul.mainContentH2
+  {
+    font-size: 18px;
+    margin-left: 4%;
+  }
+  .mainContentPic{
+    margin-top: 130px;
+    width: 88%;
+  }
+  .getQuoteButton{
+    font-size: 10px;
+    font-weight: bolder;
+  }
+
+  .tabDescription{
+    width: 92.3%;
+  }
+  .tab{
+    width: 100%;
+    height: 50px;
+    display: inline-flex;
+  }
+  .tab button
+  {
+    font-size: 12px;
+    font-weight: bolder;
+    text-transform: uppercase;
+  }
+  .developer{
+    font-size: 14px;
+  }
+ 
+  .headerLevelTwoLogo
+  {
+    width: 79%;
+    margin-top:7px;
+    margin-left: -30px;
+  }
+  .headerLevelTwo a.icon
+  {
+    width: 40%;
+  }
+
+}
+
+@media screen and (max-width: 232px)
+{
+
+  body{
+    width: 244px;
+  }
+
+  ul.mainContentH2{
+    font-size: 13px;
+    font-weight: bolder;
+    padding-left: 9px;
+  }
+  
+
+}
