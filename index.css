@@ -242,7 +242,6 @@ textarea{
 .footerColumn
 {
   float: left;
-  width: 100%;
   background-color: #192851;
   color:white;
   height: 200px;
@@ -317,34 +316,20 @@ textarea{
   }
 
   .mainContentH1{
-  font-size:23px;
+  font-size:13px;
   position: absolute;
   z-index: 2;
+  width: 90%;
 
 }
-ul.mainContentH2{
-  position: absolute;
-  z-index: 1;
-  font-weight: bolder;
-  color: #192851;
-  background-color: transparent;
-  left: -12px;
-}
 
-.getQuoteButton{
-  position: relative;
-  z-index: 2;
-  top: 160px;
-  left: -21px;
-
-}
 
   .mainContentPic{
     position: absolute;
     height: 31%;
-    width: 92%;
-    margin-top: 164px;
-    margin-left: 2px;
+    width: 90%;
+    margin-top: 205px;
+    margin-left: 10px;
     z-index: 0;
   }
 
@@ -362,7 +347,8 @@ ul.mainContentH2{
     width: 60.3%;
   }
   .getQuoteButton{
-    font-size: 14px;
+    font-size: 16px;
+    top: 23px;
   }
 
   .footerColumn{
@@ -386,22 +372,23 @@ ul.mainContentH2{
   }
 
   .mainContentH1{
-    font-size: 18px;
+    font-size: 16px;
   }
+  .mainContentH2{font-size: 11px;}
 
-  ul.mainContentH2
-  {
-    font-size: 18px;
-    margin-left: 4%;
-  }
   .mainContentPic{
-    margin-top: 130px;
-    width: 88%;
+    margin-top: 200px;
+    width: 100%;
+    margin-left: 0;
+    height: 25%;
+    opacity: 0.7;
   }
   .getQuoteButton{
-    font-size: 10px;
+    font-size: 15px;
     font-weight: bolder;
+    top: 14px;
   }
+
 
   .tabDescription{
     width: 92.3%;
@@ -441,11 +428,6 @@ ul.mainContentH2{
     width: 244px;
   }
 
-  ul.mainContentH2{
-    font-size: 13px;
-    font-weight: bolder;
-    padding-left: 9px;
-  }
   
 
 }
